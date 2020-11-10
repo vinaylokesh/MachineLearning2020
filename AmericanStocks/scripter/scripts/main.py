@@ -9,7 +9,6 @@ import pandas as pd
 from interpolation import interpolate
 from normalization import normalize
 
-
 def main(dir_path, output_dir):
     '''
         Run Pipeline of processes on file one by one.
