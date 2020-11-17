@@ -1,7 +1,4 @@
 #! /usr/bin/python
-'''
-    Data Interpolation
-'''
 
 import os, sys
 import pandas as pd
@@ -18,8 +15,7 @@ def main(dir_path):
     files = os.listdir(dir_path)
     for file_name in files:
         dataframe = pd.read_csv(os.path.join(dir_path, file_name))
-        dataframe = interpolate(dataframe, \
-            ['high', 'open', 'low', 'close', 'volume', 'adj_close'])
+        dataframe = interpolate(dataframe,['high', 'open', 'low', 'close', 'volume', 'adj_close'])
         print dataframe
 
         break
